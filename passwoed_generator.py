@@ -23,7 +23,7 @@ class Passw:
         self.password = noun + adj + str(n) + p
 
     def printp(self):
-        print("password is ",self.password)
+        print("password is ", self.password)
 
 
 def main():
