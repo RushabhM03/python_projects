@@ -62,13 +62,14 @@ class Rbt:
     def eyes(self):
         t.goto(-60, 160)
         self.rectangle(30, 10, 'white')
-        t.goto(-55, 155)
+        t.goto(-60, 160)
         self.rectangle(5, 5, 'black')
-        t.goto(-40, 155)
+        t.goto(-45, 155)
         self.rectangle(5, 5, 'black')
 
     def mouth(self):
         t.goto(-65, 135)
+        t.right(5)
         self.rectangle(40, 5, 'black')
 
 
