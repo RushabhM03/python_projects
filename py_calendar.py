@@ -30,9 +30,13 @@ class cal:
                 print("Invalid credentials for month and year")
 
     def disp_mth(self):
+        for i in range(4):
+            print()
         print(calendar.month(int(self.yy), int(self.mm)))
 
     def disp_yr(self):
+        for i in range(4):
+            print()
         print(calendar.calendar(int(self.yy)))
 
 
