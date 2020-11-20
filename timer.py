@@ -12,7 +12,7 @@ class Timer:
         while self.t:
             mins, secs = divmod(self.t, 60)
             timer1 = "{:02d}:{:02d}".format(mins, secs)
-            print(timer1, end="\r")
+            print(timer1)
             time.sleep(1)
             self.t -= 1
 
