@@ -39,6 +39,7 @@ class Rps:
                 print("YOU WIN")
 
             pa = input("DO YOU WANT TO PLAY AGAIN (YES) OR (NO)")
+
             if pa.upper() == "NO":
                 print("THANK YOU FOR PLAYING")
                 break
