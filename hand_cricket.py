@@ -69,14 +69,15 @@ class Hc:
 
         cc = random.choice(self.set)
         if 0 < uc < 7:
+            self.c_score += cc
             print("Your choice = ", uc)
             print("Computer's choice = ", cc)
         else:
             print("please enter a value between 1 and 6 only")
+            cc = 0
+            uc = 0
 
         while uc != cc and self.c_score < self.u_score:
-            self.c_score += cc
-
             try:
                 print("Enter a number between 1 and 6")
                 uc = int(input())
@@ -89,6 +90,7 @@ class Hc:
             cc = random.choice(self.set)
 
             if 0 < uc < 7:
+                self.c_score += cc
                 print("Your choice = ", uc)
                 print("Computer's choice = ", cc)
             else:
