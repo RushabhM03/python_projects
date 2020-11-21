@@ -12,6 +12,8 @@ class Hc:
 
     def start(self):
         uc = 0
+        self.u_score = 0
+        self.c_score = 0
         print("IT IS YOUR BATTING")
 
         try:
@@ -124,16 +126,18 @@ def main():
 
     ob.start()
     c = 0
-    try:
-        c = int(input("Enter 1 to play again else enter any number to quit"))
-    except ValueError as e:
-        print("Enter a proper number ")
-        print(e)
-    if c == 1:
-        ob.start()
-    else:
-        print("Thank you")
-        exit(0)
+    while True:
+        try:
+            c = int(input("Enter 1 to play again else enter any number to quit"))
+        except ValueError as e:
+            print("Enter a proper number ")
+            print(e)
+        if c == 1:
+            ob.start()
+        else:
+            print("Thank you")
+            exit(0)
+            break
 
 
 if __name__ == "__main__":
